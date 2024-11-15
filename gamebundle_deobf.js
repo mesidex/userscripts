@@ -4890,8 +4890,9 @@ const ru = {
     n[to(198)] = 1 === t[to(203)](s++);
     const a = t[to(203)](s++);
     for (let i = 0; i < a; i++) {
-      const a = {};
-      a[to(192)] = t[to(191)](s, true);
+      const a = {
+        [to(192)]: t[to(191)](s, true)
+      };
       s += 2;
       if (n[to(198)]) {
         a.userId = t.getUint32(s, true) || null;
@@ -4921,8 +4922,9 @@ const ru = {
       let i;
       for (; 0 != (i = t.getUint8(s));) {
         s++;
-        const n = {};
-        n.playerRoomId = t[to(191)](s, true);
+        const n = {
+          playerRoomId: t[to(191)](s, true)
+        };
         s += 2;
         if (0 != n[to(192)]) {
           n[to(190)] = t.getUint8(s);
@@ -5028,9 +5030,10 @@ const ru = {
     s[co(185)] = t[co(191)](o);
     o += 1;
     for (s.version >= 9 && (s[co(176)] = t[co(182)](o, true), o += 4); 255 != (i = t[co(191)](o++));) {
-      const e = {};
-      e.fishLevel = i;
-      e[co(201)] = t[co(191)](o);
+      const e = {
+        fishLevel: i,
+        [co(201)]: t[co(191)](o)
+      };
       o += 1;
       e[co(184)] = t[co(191)](o);
       o += 1;
@@ -5168,8 +5171,9 @@ const ru = {
     const i = [];
     if (a > 0) {
       for (let c = 0; c < a; c++) {
-        const e = {};
-        e.id = t[au(369)](s, true);
+        const e = {
+          id: t[au(369)](s, true)
+        };
         s += 4;
         i[au(325)](e);
       }
@@ -5223,8 +5227,9 @@ const ru = {
     const i = [];
     if (a > 0) {
       for (let c = 0; c < a; c++) {
-        const e = {};
-        e.type = t[au(319)](s);
+        const e = {
+          type: t[au(319)](s)
+        };
         s += 1;
         e.id = t[au(369)](s, true);
         s += 4;
@@ -6098,7 +6103,7 @@ function Vu(t, e) {
   })(t, e);
 }
 function ju() {
-  const t = ["forEach", "webkitExitFullscreen", "https://twitter.com/intent/user?user_id=", "LINEAR", "createGradientTexture", "script", "GRAD|", "msRequestFullscreen", "hexColorToString", "onload", "fillStyle", "stringColorToHex", "minY", "toFixed", "renderer", "pointInBounds", "RAD70", "364248sXTOyS", "RAD30", "push", '"></i></a>', "00000", "copyObject", "https://www.facebook.com/", "height", "RAD60", "join", "canvas", '<a class="', "normalizeAngle", "createLinearGradient", "getElementsByTagName", "sin", "RAD90", "getContext", "inBounds", "string", "exitFullscreen", "closeFullscreen", "endFill", "RAD180", "distancePrimitives", "delta", "15WMbiet", "114090mrsxAb", "RAD15", "twitter", "min", "documentElement", "5251807GrvNXn", "273JUctdU", "number", "trunc", "beginFill", "RAD125", "youtube", "msExitFullscreen", "TextureCache", '" href="', "lerp", "=([^&#]*)", "RAD45", "1783508KaBCVt", '" target="_blank"><i class="', "sqrt", "RAD360", "type", "random", "calculateArea", "WHITE", "619869CvdLPY", "WEBGL", "atan2", "socicon-twitter", "CIRCLE_TEXTURE", "from", "drawRoundedRect", "2NceVwN", "length", "https://www.youtube.com/channel/", "shiftOneToTheRight", "serialize", "drawCircle", "createElement", "RAD20", "504hkBOLS", "textureLoadingCallbacks", "exec", "isClockwise", "createTexturedSprite", "getRemoteTexture", "substr", "async", "createRoundedTexture", "socialNetwork", "getDistanceFromLatLonInKm", "getFormattedDurationHtml", "smallestDifference", "href", "shiftOneToTheLeft", "floor", "insertBefore", "RAD135", "addMagnitudeInDirection", "googlePlus", "</span>s", "remove", "getGradientTexture", "socicon-facebook", "getRandomInt", "mozCancelFullScreen", "onreadystatechange", "webkitRequestFullscreen", "getFormattedDuration", "socicon-googleplus", "destroy", "socialId", "width", "replace", "hasOwnProperty", "addToCache", "minX", "fillRect", "443869THSAnO", "generateTexture", "isClockwiseArray", "getSocialButton", "7524294KZnbFU", "test", "parentNode", "<span class='number'>", "openFullscreen", "[\\?&]", "cos", "readyState", "mozRequestFullScreen", "maxX", "drawRect"];
+  const t = ["forEach", "webkitExitFullscreen", "https://twitter.com/intent/user?user_id=", "LINEAR", "createGradientTexture", "script", "GRAD|", "msRequestFullscreen", "hexColorToString", "onload", "fillStyle", "stringColorToHex", "minY", "toFixed", "renderer", "pointInBounds", "RAD70", "364248sXTOyS", "RAD30", "push", "\"></i></a>", "00000", "copyObject", "https://www.facebook.com/", "height", "RAD60", "join", "canvas", "<a class=\"", "normalizeAngle", "createLinearGradient", "getElementsByTagName", "sin", "RAD90", "getContext", "inBounds", "string", "exitFullscreen", "closeFullscreen", "endFill", "RAD180", "distancePrimitives", "delta", "15WMbiet", "114090mrsxAb", "RAD15", "twitter", "min", "documentElement", "5251807GrvNXn", "273JUctdU", "number", "trunc", "beginFill", "RAD125", "youtube", "msExitFullscreen", "TextureCache", "\" href=\"", "lerp", "=([^&#]*)", "RAD45", "1783508KaBCVt", "\" target=\"_blank\"><i class=\"", "sqrt", "RAD360", "type", "random", "calculateArea", "WHITE", "619869CvdLPY", "WEBGL", "atan2", "socicon-twitter", "CIRCLE_TEXTURE", "from", "drawRoundedRect", "2NceVwN", "length", "https://www.youtube.com/channel/", "shiftOneToTheRight", "serialize", "drawCircle", "createElement", "RAD20", "504hkBOLS", "textureLoadingCallbacks", "exec", "isClockwise", "createTexturedSprite", "getRemoteTexture", "substr", "async", "createRoundedTexture", "socialNetwork", "getDistanceFromLatLonInKm", "getFormattedDurationHtml", "smallestDifference", "href", "shiftOneToTheLeft", "floor", "insertBefore", "RAD135", "addMagnitudeInDirection", "googlePlus", "</span>s", "remove", "getGradientTexture", "socicon-facebook", "getRandomInt", "mozCancelFullScreen", "onreadystatechange", "webkitRequestFullscreen", "getFormattedDuration", "socicon-googleplus", "destroy", "socialId", "width", "replace", "hasOwnProperty", "addToCache", "minX", "fillRect", "443869THSAnO", "generateTexture", "isClockwiseArray", "getSocialButton", "7524294KZnbFU", "test", "parentNode", "<span class='number'>", "openFullscreen", "[\\?&]", "cos", "readyState", "mozRequestFullScreen", "maxX", "drawRect"];
   return (ju = function () {
     return t;
   })();
@@ -22940,7 +22945,7 @@ const XS = WS(() => x(FS(539), {
   class: "summary"
 }, FS(498), -1));
 function ZS() {
-  const t = ["inner", "672936FnOWey", "chooseEvolution", "data-v-5ea5be4e", "healthMultiplier", "options", "span", "el-row", "el-image", "name", "src", "11446540mCkhvU", "choices", "damageBlock", "Habitat", "serverStats", "spritePath", "capitalize", "piranha", "black", "maxSpeed", "105591QWXWal", "Hidden", "info", "maxAd", "animal", '"Coming soon"', "145257ZskUpD", "608ZTjqVi", "34oDumVv", "touch", "habitat", "maxHp", "-name", "speedMultiplier", "onMouseenter", "class", "1508375tQSjXP", "mini", "237534JMxaOO", "tap", "animal-info", "hotkey", "8895708guMZec", "choose-animal", "value", "105orEpfR", "ml-1", "map", "font-normal mt-1", "pb-0.2em capitalize", "children-inline", "fishLevelsData", "title", "stats", "livesIn", "suitable", "currentArea", "contain", "choice", "div"];
+  const t = ["inner", "672936FnOWey", "chooseEvolution", "data-v-5ea5be4e", "healthMultiplier", "options", "span", "el-row", "el-image", "name", "src", "11446540mCkhvU", "choices", "damageBlock", "Habitat", "serverStats", "spritePath", "capitalize", "piranha", "black", "maxSpeed", "105591QWXWal", "Hidden", "info", "maxAd", "animal", "\"Coming soon\"", "145257ZskUpD", "608ZTjqVi", "34oDumVv", "touch", "habitat", "maxHp", "-name", "speedMultiplier", "onMouseenter", "class", "1508375tQSjXP", "mini", "237534JMxaOO", "tap", "animal-info", "hotkey", "8895708guMZec", "choose-animal", "value", "105orEpfR", "ml-1", "map", "font-normal mt-1", "pb-0.2em capitalize", "children-inline", "fishLevelsData", "title", "stats", "livesIn", "suitable", "currentArea", "contain", "choice", "div"];
   return (ZS = function () {
     return t;
   })();
@@ -46017,7 +46022,7 @@ function QG(t, e) {
   })(t, e);
 }
 function $G() {
-  const t = ["t2CoversLeft", "respawnTime", "RED", "pdPearlTaken", "146215nzEHZW", "#00ff00", "</span> scored!", "onScore", "4399318IZZRyF", "filters", "Left", "pearl-retrieved", "name", "playerRoomId", "_0x535cdf", "t1PearlHealth", "_watchers", "_0x1b2afb", '<span class="team" style="color: ', "2KZGlfG", "addSocketBinding", "3352688zZcGTH", "updateTick", "27onEaQg", "saturate", "pearl-taken", "t2PearlSafe", "color", "</span>", "Right", "hideSpaceType", "roomData", "PDPlayers", "entries", "PDRanking", "error", "t1PearlHolder", "685AalyKd", "_0x1a5fd2", "initWatchers", "eachSecond", "debug", "game", "playersBySide", "pdWon", "snap", "isAlive", "6298770sjfIVm", "#ff0000", "split", "push", "hideSpaceData", "_deadPlayers", "log", "t1Score", "length", "2989650VPxTlb", "4840JknrjR", "type", "gamemodeData", "PDState", "t2PearlHealth", "1656762RvnBmL", "pearlgoal", "pdPearlRetrieved", "senderSide", "handleServerMessage", "gameManager", "toEveryone", "pdScored", "forEach", "mySide", "Could not load player data", "viewport", "splice", "delete", "setSocketBindings", "timeToRespawn", "t2Score", "t1PearlSafe", "totalPearlsBySide", "message", "t2PearlHolder"];
+  const t = ["t2CoversLeft", "respawnTime", "RED", "pdPearlTaken", "146215nzEHZW", "#00ff00", "</span> scored!", "onScore", "4399318IZZRyF", "filters", "Left", "pearl-retrieved", "name", "playerRoomId", "_0x535cdf", "t1PearlHealth", "_watchers", "_0x1b2afb", "<span class=\"team\" style=\"color: ", "2KZGlfG", "addSocketBinding", "3352688zZcGTH", "updateTick", "27onEaQg", "saturate", "pearl-taken", "t2PearlSafe", "color", "</span>", "Right", "hideSpaceType", "roomData", "PDPlayers", "entries", "PDRanking", "error", "t1PearlHolder", "685AalyKd", "_0x1a5fd2", "initWatchers", "eachSecond", "debug", "game", "playersBySide", "pdWon", "snap", "isAlive", "6298770sjfIVm", "#ff0000", "split", "push", "hideSpaceData", "_deadPlayers", "log", "t1Score", "length", "2989650VPxTlb", "4840JknrjR", "type", "gamemodeData", "PDState", "t2PearlHealth", "1656762RvnBmL", "pearlgoal", "pdPearlRetrieved", "senderSide", "handleServerMessage", "gameManager", "toEveryone", "pdScored", "forEach", "mySide", "Could not load player data", "viewport", "splice", "delete", "setSocketBindings", "timeToRespawn", "t2Score", "t1PearlSafe", "totalPearlsBySide", "message", "t2PearlHolder"];
   return ($G = function () {
     return t;
   })();
@@ -46147,19 +46152,19 @@ class tK extends GG {
       case aA[QG(168)]:
         {
           const s = n[t[QG(163)]];
-          t[QG(163)] = Rm(QG(107), [QG(100) + s[QG(109)] + '">' + s[QG(177)] + QG(110)]);
+          t[QG(163)] = Rm(QG(107), [QG(100) + s[QG(109)] + "\">" + s[QG(177)] + QG(110)]);
         }
         break;
       case aA[QG(146)]:
         {
           const s = n[t[QG(163)]];
-          t[QG(163)] = Rm(QG(176), [QG(100) + s[QG(109)] + '">' + s[QG(177)] + QG(110)]);
+          t[QG(163)] = Rm(QG(176), [QG(100) + s[QG(109)] + "\">" + s[QG(177)] + QG(110)]);
         }
         break;
       case aA[QG(151)]:
         {
           const s = n[t[QG(163)]];
-          t[QG(163)] = Rm('<span class="team" style="color: ' + s[QG(109)] + '">' + s[QG(177)] + QG(171));
+          t[QG(163)] = Rm("<span class=\"team\" style=\"color: " + s[QG(109)] + "\">" + s[QG(177)] + QG(171));
         }
         break;
       case aA[QG(126)]:
@@ -49474,7 +49479,7 @@ var rJ = h({
       l[sJ(270)] = true;
       try {
         if (!t) {
-          c.id = r.id;
+          c.id = null;
           c.platform_id = r[sJ(269)];
           c[sJ(260)] = r[sJ(260)];
           return void (c[sJ(252)] = r[sJ(252)]);
@@ -49917,7 +49922,7 @@ var TJ = h({
             onClick: s[6] || (s[6] = t => Me(c)(SJ(355)))
           }, null, 8, ["disabled"])], 64))]), x("dd", null, [null === Me(o)[SJ(355)] ? (f(), b("p", vJ, [t.user[SJ(355)] ? (f(), b(v, {
             key: 0
-          }, [C('"' + T(t[SJ(368)][SJ(355)]) + '"', 1)], 64)) : (f(), b(v, {
+          }, [C("\"" + T(t[SJ(368)][SJ(355)]) + "\"", 1)], 64)) : (f(), b(v, {
             key: 1
           }, [C("No death message")], 64))])) : (f(), m(R, {
             key: 1,
@@ -51127,7 +51132,7 @@ const e1 = {
   class: "inner"
 };
 function n1() {
-  const t = ["is_friend", "gray", "mdiLoading", "743508Twqixa", "userStringId", "Verified account", "friend-request-send", "content", "modelValue", "title", "header", "1726614njeIYS", "I'm sure", "profile_views", "Are you sure?", "/img/verified.png", "mdiClose", "6506368Hoewyh", "tabs px-1", "friend_request_sent", "value", "mr-3", "tab", "el-input", "Warning", "ElTooltip", "profile", "div", "stats", "userId", "You must be logged in to send friend requests", "send", "avatar", "icon-button--low-padding mt-1", "bottom", "ElImage", "ProfileView", "text", "unfriend", "component", "icon-button--low-padding", "384404IEglBy", "onClick", "creations", "Remove Friend", "228kwbuqp", "API_URL", "mdiCheck", "Friend request sent", "35TThnUF", "el-dropdown-menu", "mdiAccountCheck", "3ZLJhYO", "el-dropdown", "click", "red", "Success", "5142556PyxQxT", "views", "span", "class", "1746488mdynYY", 'Changing your username will remove your "Verified account" badge.', "picture", "$refs", " Log out ", "user", "headers", "items", "about", "el-dropdown-item", "mdiCog", "Are you sure you want to remove ", "el-row", "push", "png", "yellow", "mini", "Cancel", "60nubxdi", "username", "mt-0.7", "params", "el-tooltip", "disabled", "mdiContentSave", "mdiEyeOutline", "83780nmYYBk", "verified", "Remove friend"];
+  const t = ["is_friend", "gray", "mdiLoading", "743508Twqixa", "userStringId", "Verified account", "friend-request-send", "content", "modelValue", "title", "header", "1726614njeIYS", "I'm sure", "profile_views", "Are you sure?", "/img/verified.png", "mdiClose", "6506368Hoewyh", "tabs px-1", "friend_request_sent", "value", "mr-3", "tab", "el-input", "Warning", "ElTooltip", "profile", "div", "stats", "userId", "You must be logged in to send friend requests", "send", "avatar", "icon-button--low-padding mt-1", "bottom", "ElImage", "ProfileView", "text", "unfriend", "component", "icon-button--low-padding", "384404IEglBy", "onClick", "creations", "Remove Friend", "228kwbuqp", "API_URL", "mdiCheck", "Friend request sent", "35TThnUF", "el-dropdown-menu", "mdiAccountCheck", "3ZLJhYO", "el-dropdown", "click", "red", "Success", "5142556PyxQxT", "views", "span", "class", "1746488mdynYY", "Changing your username will remove your \"Verified account\" badge.", "picture", "$refs", " Log out ", "user", "headers", "items", "about", "el-dropdown-item", "mdiCog", "Are you sure you want to remove ", "el-row", "push", "png", "yellow", "mini", "Cancel", "60nubxdi", "username", "mt-0.7", "params", "el-tooltip", "disabled", "mdiContentSave", "mdiEyeOutline", "83780nmYYBk", "verified", "Remove friend"];
   return (n1 = function () {
     return t;
   })();
